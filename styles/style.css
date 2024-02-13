@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #f6f6f6;
+    --secondary-color: #FBFF12;
+    --tertiary-color: #ff206e;
+    --alternative-color: #000000;
+    --font-titles: 'Chakra Petch', sans-serif;
+    --font-texts: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/*CSS Geral*/
+.cabecalho {
+    padding: 1rem 16.75rem;
+    border-bottom: 0.1rem var(--tertiary-color) solid;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.cabecalho__menu--link {
+    font-family: var(--font-titles);
+    color: var(--primary-color);
+    width: 6.75rem;
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cabecalho__menu--link:hover {
+    background-color: var(--secondary-color);
+    color: var(--alternative-color);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    color: var(--alternative-color);
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+}
+
+.rodape__texto {
+    font-family: var(--font-titles);
+    font-size: 1rem;
+}
+
+#titulos {
+    font-family: var(--font-titles);
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+#subtitulos {
+    font-family: var(--font-titles);
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+#textos {
+    font-family: var(--font-texts);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--primary-color);
+}
+
+#destaque {
+    font-weight: 600;
+}
+
+strong {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/*CSS Index*/
+.principal {
+    display: flex;
+    justify-content:center;
+    text-align: justify;
+    margin-top: 3.75rem;
+    margin-bottom: 6rem;
+}
+
+.apresentacao { 
+    flex-direction: column;
+    width: 30%;
+    font-family: var(--font-titles);
+    line-height: 1.75rem;
+    padding-right: 4.0rem;
+}
+
+.apresentacao__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.apresentacao__redes > h2 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.apresentacao__redes--link__insta {
+    display: flex;
+    justify-content: center;
+    border: var(--tertiary-color) 0.125rem solid;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    width: 12.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.25rem;
+    font-family: var(--font-texts);
+    font-weight: 600;
+    font-size: 0.75rem;
+    transition: all 0.3s;
+}
+
+.apresentacao__redes--link__linkedin {
+    display: flex;
+    justify-content: center;
+    border: var(--tertiary-color) 0.125rem solid;
+    width: 12.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.25rem;
+    font-family: var(--font-texts);
+    font-weight: 600;
+    font-size: 0.75rem;
+    transition: all 0.3s;
+}
+
+.apresentacao__redes--link__github {
+    display: flex;
+    justify-content: center;
+    border: var(--tertiary-color) 0.125rem solid;
+    border-bottom-right-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    width: 12.5rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.25rem;
+    font-family: var(--font-texts);
+    font-weight: 600;
+    font-size: 0.75rem;
+    transition: all 0.3s;
+}
+
+.apresentacao__redes--logo {
+    padding-right: 0.357rem;
+    padding-top: 0.15rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.apresentacao__redes--link__insta:hover {
+    background-color: rgba(251, 255, 18, 0.3);
+    border: rgba(251, 255, 18, 0.6) 0.125rem solid;
+}
+
+.apresentacao__redes--link__linkedin:hover {
+    background-color: rgba(251, 255, 18, 0.3);
+    border: rgba(251, 255, 18, 0.6) 0.125rem solid;
+}
+
+.apresentacao__redes--link__github:hover {
+    background-color: rgba(251, 255, 18, 0.3);
+    border: rgba(251, 255, 18, 0.6) 0.125rem solid;
+}
+
+.apresentacao__imagem--perfil {
+    margin-top: 3.75rem;
+    height: 21rem;
+    border-top-left-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    border: var(--secondary-color) 0.5rem double;
+}
+
+/*CSS About*/
+.principal__sobremim {
+    text-align: justify;
+    width: 49.25rem;
+    margin: 8rem 17.5rem 8rem 17.5rem;
+}
+
+.apresentacao__sobremim > #titulos {
+    padding-bottom: 1rem;
+}
+
+/*CSS Resume*/
+.principal__qualificacoes {
+    text-align: justify;
+    width: 49.25rem;
+    margin: 3.5rem 17.5rem 4.5rem 17.5rem;
+}
+
+.qualificacoes__cursos > h1 {
+    margin-bottom: 1rem
+}
+
+li {
+    line-height: 1.5rem;
+    list-style-type: square;
+}
+
+.qualificacoes__skills > h1 {
+    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+/*CSS Media Queries*/
+@media (max-width: 1200px) {
+    .cabecalho {
+        width: auto;
+        padding: 1rem 0;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .cabecalho__menu--link {
+        padding: 1%;
+        font-size: 0.85rem;
+        width: 7rem;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 10%;
+    }
+
+    .principal__sobremim {
+        align-items: center;
+        margin: 10%;
+        width: auto;
+    }
+
+    .principal__qualificacoes {
+        width: auto;
+        margin: 10%;
+    }
+
+    .apresentacao {
+        width: auto;
+        padding: 1%;
+    }
+
+    .apresentacao > #titulos {
+        padding-top: 3%;
+    }
+
+    .apresentacao__redes > h2 {
+        margin-top: 0;
+    }
+
+.apresentacao__imagem--perfil {
+    margin-top: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    ul li {
+        font-size: 0.8rem;
+    }
+}
+
+
